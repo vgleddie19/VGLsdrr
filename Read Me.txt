@@ -1,0 +1,40 @@
+Using Command in C#
+by Eddie Cabellon
+
+Global Variables
+
+        public static Dictionary<String, Boolean> ListOfControls { get; set; }
+        public static List<String> ListOfActiveControls { get; set; }
+        public static String SDRRprintoutType { get; set; }
+        public static String SDRRListType { get; set; }
+        public static String NUDListType { get; set; }
+        public static String printpreview_formuse { get; set; }
+        public static bool isNewRecord { get; set; }
+
+
+
+
+
+
+Opening a new form
+Menu Control - SDRRCommands.MenuCotrol
+
+button mousedown	---- StartControl
+	ListOfActiveControls.Add("SDRRMENU");
+
+OpenMenuControlExecute	-Main Menu
+            if (Utils.ListOfActiveControls[Utils.ListOfActiveControls.Count - 1] == "SDRRMENU")
+            {
+                if (Utils.ListOfControls["SDRRMENU"])
+                {
+                    Debug.Assert(sdrrmenu == null);
+                    Utils.ListOfControls["SDRRMENU"] = false;
+                    sdrrmenu = new SDRRControl();
+                    sdrrmenu.Dock = DockStyle.Fill;
+                    sdrrmenu.Commands = _Commands;
+                    this.ShowModalPanel(sdrrmenu, DevComponents.DotNetBar.Controls.eSlideSide.Left);
+                    if (!_StartControl.Visible)
+                        _StartControl.SlideOutButtonVisible = false;
+                }
+            }
+			

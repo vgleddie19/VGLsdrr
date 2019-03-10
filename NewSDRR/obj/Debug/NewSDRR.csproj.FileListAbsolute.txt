@@ -1,0 +1,39 @@
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\ResolveAssemblyReference.cache
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.Properties.Resources.resources
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.StartControl.resources
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.csproj.GenerateResource.Cache
+D:\Work Load\NewSDRR\NewSDRR\bin\Debug\NewSDRR.exe
+D:\Work Load\NewSDRR\NewSDRR\bin\Debug\NewSDRR.pdb
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.exe
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.pdb
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.SDRRControl.resources
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.MainMenu.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.exe
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.pdb
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.MainMenu.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.Properties.Resources.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.newSDRRtransControl.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.SDRRControl.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.StartControl.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.csproj.GenerateResource.Cache
+D:\WorkLoad\NewSDRR\NewSDRR\bin\Debug\NewSDRR.exe
+D:\WorkLoad\NewSDRR\NewSDRR\bin\Debug\NewSDRR.pdb
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.exe
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.pdb
+H:\Updated Work\NewSDRR\NewSDRR\bin\Debug\NewSDRR.exe
+H:\Updated Work\NewSDRR\NewSDRR\bin\Debug\NewSDRR.pdb
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\ResolveAssemblyReference.cache
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.MainMenu.resources
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.Properties.Resources.resources
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.newSDRRtransControl.resources
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.SDRRControl.resources
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.StartControl.resources
+H:\Updated Work\NewSDRR\NewSDRR\obj\Debug\NewSDRR.csproj.GenerateResource.Cache
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.newSDRRtransControl.resources
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.invoicepickingControls.resources
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.ChangeConnection.resources
+D:\Work Load\NewSDRR\NewSDRR\obj\Debug\NewSDRR.reportviewercontrol.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.ChangeConnection.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.invoicepickingControls.resources
+D:\WorkLoad\NewSDRR\NewSDRR\obj\Debug\NewSDRR.reportviewercontrol.resources
