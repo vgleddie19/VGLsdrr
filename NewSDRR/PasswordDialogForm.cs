@@ -20,7 +20,7 @@ namespace NewSDRR
         public PasswordDialogForm()
         {
             InitializeComponent();
-            this.Icon = Properties.Resources.keys;
+            this.Icon = Properties.Resources.Settings;
         }
 
         private void btnOK_Click(object sender, EventArgs e)

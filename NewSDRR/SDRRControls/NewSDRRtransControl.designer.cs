@@ -571,7 +571,7 @@ namespace NewSDRR
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX1.TabIndex = 19;
             this.buttonX1.Text = "Add New Driver/Helper";
-            this.buttonX1.Click += new System.EventHandler(this.btninvoice_Click);
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // btninvoice
             // 

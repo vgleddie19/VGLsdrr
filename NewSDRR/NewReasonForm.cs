@@ -11,10 +11,15 @@ namespace NewSDRR
 {
     public partial class NewReasonForm : Form
     {
-        public NewReasonForm()
-        {
+        public NewReasonForm(bool isreason)
+        {           
             InitializeComponent();
-            this.Icon = Properties.Resources.sdrr1_TN8_2;
+
+            this.Icon = Properties.Resources.truck_icon;
+            if (isreason)
+                grpreason.Visible = true;
+            else
+                groupBox2.Visible = true;
         }
 
         public bool save()
@@ -24,7 +29,7 @@ namespace NewSDRR
                 if (txtreason.Text.Trim().Length <= 0)
                 {
                     DevComponents.DotNetBar.MessageBoxEx.Show("Empty reason!");
-                    txtreason .Focus();
+                    txtreason.Focus();
                     return false;
                 }
                 Utils.ExecuteNonQuery("INSERT INTO base_reason(reason) values('" + txtreason.Text.ToUpper() + "')", null);
@@ -35,10 +40,35 @@ namespace NewSDRR
 
         }
 
+        public void AddNewDH()
+        {
+            try
+            {
+                Dictionary<String, Object> Param = new Dictionary<String, Object>();
+                Param.Add("@position", cboPosition.Text);
+                Param.Add("@name", fnameTxt.Text);
+                Param.Add("@contactno", contactnoTxt.Text);
+
+                Utils.ExecuteStoredProcedureNonQuery("[dbo].[sp_BASE_AddNewDH]", Param);
+                DevComponents.DotNetBar.MessageBoxEx.Show("Saving Complete");
+                this.Close();
+
+            }
+            catch (Exception ex)
+            {
+                DevComponents.DotNetBar.MessageBoxEx.Show(ex.Message);
+            }
+        }
+
         private void btnreason_Click(object sender, EventArgs e)
         {
-            if(save())
+            if (save())
                 this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddNewDH();
         }
     }
 }

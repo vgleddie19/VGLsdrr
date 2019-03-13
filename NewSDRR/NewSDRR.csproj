@@ -405,6 +405,7 @@
     <None Include="Resources\sdrr1_TN8_2.ico" />
     <None Include="Resources\Settings.ico" />
     <None Include="Resources\keys.ico" />
+    <None Include="Resources\truck_icon.ico" />
     <Content Include="sdrr1_TN8_2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
