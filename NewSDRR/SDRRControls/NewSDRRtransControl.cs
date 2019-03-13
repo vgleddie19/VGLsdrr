@@ -984,6 +984,7 @@ namespace NewSDRR
         private void buttonX1_Click(object sender, EventArgs e)
         {
             NewReasonForm reason = new NewReasonForm(false);
+            reason.Text = "New Driver/Helper";
             reason.StartPosition = FormStartPosition.CenterScreen;
             reason.ShowDialog();
             initdriverbox();

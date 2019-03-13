@@ -12,7 +12,7 @@
     <AssemblyName>NewSDRR</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>sdrr1_TN8_2.ico</ApplicationIcon>
+    <ApplicationIcon>truck_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -402,11 +402,12 @@
     <None Include="Data\Reports.xss">
       <DependentUpon>Reports.xsd</DependentUpon>
     </None>
-    <None Include="Resources\sdrr1_TN8_2.ico" />
     <None Include="Resources\Settings.ico" />
     <None Include="Resources\keys.ico" />
     <None Include="Resources\truck_icon.ico" />
-    <Content Include="sdrr1_TN8_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="truck_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

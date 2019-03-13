@@ -43,7 +43,7 @@ namespace NewSDRR
         {
             if (newValue != null)
             {
-                if (Utils.printpreview_formuse == "newSDRRtransControl")
+                if (Utils.printpreview_formuse == "newSDRRtransControl" || Utils.printpreview_formuse == "DeliveryStatusControl")
                 {
                     btnSave.Command = newValue.SDRRCommands.Save;
                     btncancel.Command = newValue.SDRRCommands.Cancel;
@@ -64,7 +64,7 @@ namespace NewSDRR
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Utils.printpreview_formuse == "newSDRRtransControl")            
+            if (Utils.printpreview_formuse == "newSDRRtransControl" || Utils.printpreview_formuse == "DeliveryStatusControl")   
                 Utils.ListOfActiveControls.Add("SDRRSAVEEXECUTE");            
             else if (Utils.printpreview_formuse == "NewNUDtransControl")
                 Utils.ListOfActiveControls.Add("NUDSAVEEXECUTE");
