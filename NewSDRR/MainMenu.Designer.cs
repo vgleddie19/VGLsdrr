@@ -34,10 +34,10 @@ namespace NewSDRR
             this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.metroTabItem2 = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.metroTabItem1 = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.metroTabPanel2 = new DevComponents.DotNetBar.Metro.MetroTabPanel();
+            this.metroTabItem1 = new DevComponents.DotNetBar.Metro.MetroTabItem();
             this.metroTabPanel1 = new DevComponents.DotNetBar.Metro.MetroTabPanel();
+            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.metroShell1 = new DevComponents.DotNetBar.Metro.MetroShell();
             this.metroShell1.SuspendLayout();
             this.SuspendLayout();
@@ -82,18 +82,6 @@ namespace NewSDRR
             this.metroTabItem2.Panel = this.metroTabPanel2;
             this.metroTabItem2.Text = "&VIEW";
             // 
-            // metroTabItem1
-            // 
-            this.metroTabItem1.Checked = true;
-            this.metroTabItem1.Name = "metroTabItem1";
-            this.metroTabItem1.Panel = this.metroTabPanel1;
-            this.metroTabItem1.Text = "&HOME";
-            // 
-            // styleManager1
-            // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Blue;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(57)))), ((int)(((byte)(123))))));
-            // 
             // metroTabPanel2
             // 
             this.metroTabPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -117,6 +105,13 @@ namespace NewSDRR
             this.metroTabPanel2.TabIndex = 2;
             this.metroTabPanel2.Visible = false;
             // 
+            // metroTabItem1
+            // 
+            this.metroTabItem1.Checked = true;
+            this.metroTabItem1.Name = "metroTabItem1";
+            this.metroTabItem1.Panel = this.metroTabPanel1;
+            this.metroTabItem1.Text = "&HOME";
+            // 
             // metroTabPanel1
             // 
             this.metroTabPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -138,6 +133,11 @@ namespace NewSDRR
             // 
             this.metroTabPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.metroTabPanel1.TabIndex = 1;
+            // 
+            // styleManager1
+            // 
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Blue;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(57)))), ((int)(((byte)(123))))));
             // 
             // metroShell1
             // 

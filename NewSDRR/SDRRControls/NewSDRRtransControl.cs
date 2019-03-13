@@ -57,19 +57,7 @@ namespace NewSDRR
             Helper = Utils.BuildIndex("[dbo].[sp_BASE_GetHelper]", "name", null);
             EncodedInvoice = Utils.BuildIndex_SQL("SELECT * FROM GLOBAL_ProductTrans WHERE delstat = 'DELIVERED' or delstat = ''", "INVOICE_NO");
 
-            cboDriver.DataSource = Utils.ExecuteStoredProcedure("[dbo].[sp_BASE_GetDriver]", null);
-            cboDriver.DisplayMember = "name";
-            cboDriver.ValueMember = "_DriverHelperIndex";
-
-            cboHelper.DataSource = Utils.ExecuteStoredProcedure("[dbo].[sp_BASE_GetHelper]", null);
-            cboHelper.DisplayMember = "name";
-            cboHelper.ValueMember = "_DriverHelperIndex";
-
-            cboHelper2.DataSource = Utils.ExecuteStoredProcedure("[dbo].[sp_BASE_GetHelper]", null);
-            cboHelper2.DisplayMember = "name";
-            cboHelper2.ValueMember = "_DriverHelperIndex";
-            cboHelper2.Text = "";
-            cboHelper.Text = "";
+            initdriverbox();
 
             cboClient = UIControlSupport.SetComboBoxEx(cboClient, Utils.GetDataTable("SELECT * FROM base_client ORDER BY clientcode"), "clientcode,clientname", "clientname", "clientcode", AutoCompleteSource.ListItems, AutoCompleteMode.SuggestAppend, ComboBoxStyle.DropDown);
             cboClient.DropDownWidth = 450;
@@ -83,6 +71,22 @@ namespace NewSDRR
                 ShowSDRRDetails();
             }
             //btnback.colort
+        }
+        private void initdriverbox()
+        {
+            cboDriver.DataSource = Utils.ExecuteStoredProcedure("[dbo].[sp_BASE_GetDriver]", null);
+            cboDriver.DisplayMember = "name";
+            cboDriver.ValueMember = "_DriverHelperIndex";
+
+            cboHelper.DataSource = Utils.ExecuteStoredProcedure("[dbo].[sp_BASE_GetHelper]", null);
+            cboHelper.DisplayMember = "name";
+            cboHelper.ValueMember = "_DriverHelperIndex";
+
+            cboHelper2.DataSource = Utils.ExecuteStoredProcedure("[dbo].[sp_BASE_GetHelper]", null);
+            cboHelper2.DisplayMember = "name";
+            cboHelper2.ValueMember = "_DriverHelperIndex";
+            cboHelper2.Text = "";
+            cboHelper.Text = "";
         }
         #endregion
 
@@ -975,6 +979,15 @@ namespace NewSDRR
         private void btninvoice_Click(object sender, EventArgs e)
         {
             Utils.ListOfActiveControls.Add("INVOICEPICK");
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            NewReasonForm reason = new NewReasonForm(false);
+            reason.Text = "New Driver/Helper";
+            reason.StartPosition = FormStartPosition.CenterScreen;
+            reason.ShowDialog();
+            initdriverbox();
         }
     }
 }

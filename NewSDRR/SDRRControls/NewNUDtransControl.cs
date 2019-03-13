@@ -419,7 +419,7 @@ namespace NewSDRR
         #region Buttons
         private void btnAddReason_Click(object sender, EventArgs e)
         {
-            NewReasonForm reason = new NewReasonForm();
+            NewReasonForm reason = new NewReasonForm(true);
             reason.StartPosition = FormStartPosition.CenterScreen;
             reason.ShowDialog();
         }
