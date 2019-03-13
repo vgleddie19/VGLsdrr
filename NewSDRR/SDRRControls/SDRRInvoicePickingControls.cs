@@ -91,7 +91,7 @@ namespace NewSDRR
             invoicedata.Columns.Add(new DataColumn("gridcolcust", typeof(string)));
             invoicedata.Columns.Add(new DataColumn("gridcolzone", typeof(string)));
             invoicedata.Columns.Add(new DataColumn("Term", typeof(string)));
-            invoicedata.Columns.Add(new DataColumn("index", typeof(string)));
+            invoicedata.Columns.Add(new DataColumn("gridcolindex", typeof(string)));
 
             if (Utils.ClientConnection.ContainsKey(_clientname[0]))
             {
@@ -104,7 +104,7 @@ namespace NewSDRR
                         {
                             dBaseConnection.Open();
                             System.Data.OleDb.OleDbCommand dBaseCommand;
-                            dBaseCommand = new System.Data.OleDb.OleDbCommand("SELECT TERM, ZONEFLAG, SINUMBER, SIDATE, GROSSAMT, CUSTNAME ORDER BY sidate DESC", dBaseConnection);
+                            dBaseCommand = new System.Data.OleDb.OleDbCommand("SELECT TERM, ZONEFLAG, SINUMBER, SIDATE, GROSSAMT, CUSTNAME FROM SIMASTER ORDER BY sidate DESC", dBaseConnection);
                             System.Data.OleDb.OleDbDataReader dBaseDataReader;
                             dBaseDataReader = dBaseCommand.ExecuteReader();
                             while (dBaseDataReader.Read())
