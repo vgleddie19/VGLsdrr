@@ -100,8 +100,10 @@ namespace NewSDRR
                     try
                     {
                         ConnectionString = String.Format("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = {0};Extended Properties =dBase IV;", Utils.ClientConnection[_clientname[0]]["Directory"]);
+                        MessageBox.Show(ConnectionString);
                         using (OleDbConnection dBaseConnection = new OleDbConnection(ConnectionString))
                         {
+                            MessageBox.Show(ConnectionString);
                             dBaseConnection.Open();
                             System.Data.OleDb.OleDbCommand dBaseCommand;
                             dBaseCommand = new System.Data.OleDb.OleDbCommand("SELECT TERM, ZONEFLAG, SINUMBER, SIDATE, GROSSAMT, CUSTNAME FROM SIMASTER ORDER BY sidate DESC", dBaseConnection);
