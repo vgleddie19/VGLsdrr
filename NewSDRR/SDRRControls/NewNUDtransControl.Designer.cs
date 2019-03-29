@@ -89,6 +89,8 @@
             // btnAddInvoices
             // 
             this.btnAddInvoices.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnAddInvoices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnAddInvoices.ColorTable = DevComponents.DotNetBar.eButtonColor.Orange;
             this.btnAddInvoices.Location = new System.Drawing.Point(843, 48);
             this.btnAddInvoices.Name = "btnAddInvoices";
             this.btnAddInvoices.Size = new System.Drawing.Size(60, 40);
@@ -213,6 +215,8 @@
             // 
             // nudgrid
             // 
+            this.nudgrid.AllowUserToAddRows = false;
+            this.nudgrid.AllowUserToDeleteRows = false;
             this.nudgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.nudgrid.ColumnHeadersHeight = 50;
             this.nudgrid.Dock = System.Windows.Forms.DockStyle.Fill;

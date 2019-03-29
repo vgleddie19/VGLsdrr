@@ -124,6 +124,7 @@
             this.btnreason.TabIndex = 23;
             this.btnreason.Text = "Add";
             this.btnreason.UseVisualStyleBackColor = false;
+            this.btnreason.Click += new System.EventHandler(this.btnreason_Click);
             // 
             // txtreason
             // 
@@ -179,8 +180,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(277, 169);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpreason);
+            this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "NewReasonForm";
             this.Text = "New Reason";

@@ -381,7 +381,7 @@ namespace NewSDRR
                 error += "Missing Customer Name\n";
             else if (cboTerms.Text.Trim().Length <= 0)
                 error += "Missing Terms\n";
-            else if (nudgrid.Rows.Count == 1)
+            else if (nudgrid.Rows.Count == 0)
                 error += "Missing Grid Details\n";
 
             foreach (DataGridViewRow dRow in nudgrid.Rows)

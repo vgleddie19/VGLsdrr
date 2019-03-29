@@ -32,7 +32,9 @@ namespace NewSDRR
                     txtreason.Focus();
                     return false;
                 }
-                Utils.ExecuteNonQuery("INSERT INTO base_reason(reason) values('" + txtreason.Text.ToUpper() + "')", null);
+                if(Utils.ExecuteNonQuery("INSERT INTO base_reason(reason) values('" + txtreason.Text.ToUpper() + "')", null) >= 1)
+                    return true;
+
                 return false;
             }
             catch (Exception ex)
@@ -62,8 +64,9 @@ namespace NewSDRR
 
         private void btnreason_Click(object sender, EventArgs e)
         {
-            if (save())
-                this.Close();
+            if (!save())
+                DevComponents.DotNetBar.MessageBoxEx.Show("Unable to save!");
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
