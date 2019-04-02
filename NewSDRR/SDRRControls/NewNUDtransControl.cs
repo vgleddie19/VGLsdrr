@@ -445,8 +445,8 @@ namespace NewSDRR
             int rowindex = 0;
             foreach (DataGridViewRow dRow in sdrrgrid.Rows)//gi sud ang mga value sa result row
             {
-                if (dRow.Index == sdrrgrid.Rows.Count - 1)
-                    break;
+                //if (dRow.Index == sdrrgrid.Rows.Count - 1)
+                //    break;
                 resultRow = result.NewRow();
 
                 resultRow["invoice_no"] = dRow.Cells["invoice_no"].Value.ToString();
